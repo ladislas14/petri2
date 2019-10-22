@@ -53,23 +53,37 @@ public class InputArc implements IArc {
 	}
 
 	/**
-	 * Getter and setter for weight
+	 * Get weight of the arc.
+	 *
+	 * @return weight of the arc
 	 */
 	public int getWeight() {
 		return weight;
 	}
-	
+
+	/**
+	 * Set weight of the arc.
+	 *
+	 * @param weight of the arc
+	 */
 	public void setWeight(int weight) {
 		this.weight = weight;
 	}
 
-    /**
-     * Getter and Setter for place
-     */
+	/**
+	 * Get place linked to the arc
+	 *
+	 * @return place
+	 */
     public Place getPlace() {
 		return place;
 	}
 
+	/**
+	 * Set place linked to the arc.
+	 *
+	 * @param place the place linked to the arc
+	 */
     public void setPlace(Place place) {
 		this.place = place;
 	}

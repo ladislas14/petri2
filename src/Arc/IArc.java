@@ -1,21 +1,29 @@
 package Arc;
+
 /**
  * Interface IArc
  *
- * @version 1.0
  * @author Ladislas DELLINGER and Alfred PICHARD
+ * @version 1.0
  */
 public interface IArc {
-	
+
 	/**
-	 * Fire function, see different arc cases.
+	 * Fire.
 	 */
 	public void fire();
-	
+
 	/**
-	 * Getter and Setter for weight.
+	 * Get weight of the arc.
+	 *
+	 * @return weight of the arc
 	 */
 	public int getWeight();
 
+	/**
+	 * Set weight of the arc.
+	 *
+	 * @param weight of the arc
+	 */
 	public void setWeight(int weight);
 }
