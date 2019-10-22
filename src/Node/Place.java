@@ -1,7 +1,17 @@
 package Node;
 
 /**
- * The type Place.
+ * Implementation of the places of the PetriNet.
+ *
+ * <p>
+ *     A place is a type of node in a PetriNet.
+ * </p>
+ *
+ * <p>
+ *     <b><i>Remark : we made the choice, contrary to what we made in the class diagram, to not create a {@code Token} class but just use a {@code int} to simplify the implementation.</i></b>
+ * </p>
+ * @version 1.0
+ * @author Ladislas DELLINGER and Alfred PICHARD
  */
 public class Place {
 	private int tokens;
@@ -17,6 +27,10 @@ public class Place {
 
 	/**
 	 * Instantiates a new Place.
+	 *
+	 * <p>
+	 *     Second constructor to instantiate a new empty Place.
+	 * </p>
 	 */
 	public Place() {
 		this(0);
@@ -41,16 +55,16 @@ public class Place {
 	}
 
 	/**
-	 * Give.
+	 * Add the number of token given in param.
 	 *
 	 * @param tokens the tokens
 	 */
-	public void give(int tokens) {
+	public void add(int tokens) {
 		this.setTokens(this.getTokens()+tokens);
 	}
 
 	/**
-	 * Remove.
+	 * Remove the number of token given in param.
 	 *
 	 * @param tokens the tokens
 	 */
