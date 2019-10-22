@@ -3,8 +3,9 @@ import Node.Place;
 
 /**
  *  Output arc class
- * @version 1.0
- * @author Ladislas DELLINGER & Alfred PICHARD
+ *
+ *  @version 1.0
+ *  @author Ladislas DELLINGER and Alfred PICHARD
  */
 public class OutputArc implements IArc {
 	
@@ -36,7 +37,7 @@ public class OutputArc implements IArc {
 	 * In this case, give the right number of tokens to the corresponding place.
 	 */
 	public void fire() {
-		this.getPlace().give(this.getWeight());
+		this.getPlace().add(this.getWeight());
 
 	}
 

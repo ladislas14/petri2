@@ -3,10 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="4ea8976c-f001-4214-b5e2-acfd74ec7f98" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/src/Arc/InhibitorArc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Arc/InhibitorArc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Arc/InputArc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Arc/InputArc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Arc/OutputArc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Arc/OutputArc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Arc/ResetArc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Arc/ResetArc.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/bin/Arc/InhibitorArc.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Arc/InhibitorArc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Arc/InputArc.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Arc/InputArc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Arc/OutputArc.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Arc/OutputArc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Arc/ResetArc.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Arc/ResetArc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Node/Place.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Node/Place.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Node/Transition.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Node/Transition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/PetriNet/IPetriNet.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/PetriNet/IPetriNet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/PetriNet/PetriNet.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/PetriNet/PetriNet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Node/Place.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node/Place.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PetriNet/IPetriNet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PetriNet/IPetriNet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PetriNet/PetriNet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PetriNet/PetriNet.java" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,9 +34,16 @@
   <component name="ProjectId" id="1SZJM94R5vwp6hpt5ASWxEcaqOh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
@@ -65,7 +86,7 @@
       <workItem from="1571766244794" duration="83000" />
       <workItem from="1571766521273" duration="389000" />
       <workItem from="1571767064044" duration="1153000" />
-      <workItem from="1571768400542" duration="331000" />
+      <workItem from="1571768400542" duration="2219000" />
     </task>
     <servers />
   </component>

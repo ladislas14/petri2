@@ -3,8 +3,9 @@ import Node.Place;
 
 /**
  *  Inhibitor arc class
- * @version 1.0
- * @author Ladislas DELLINGER & Alfred PICHARD
+ *
+ *  @version 1.0
+ *  @author Ladislas DELLINGER and Alfred PICHARD
  */
 public class InhibitorArc extends InputArc {
 
