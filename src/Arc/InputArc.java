@@ -3,9 +3,8 @@ import Node.Place;
 
 /**
  *  Input arc class
- *
- *  @version 1.0
- *  @author Ladislas DELLINGER and Alfred PICHARD
+ * @version 1.0
+ * @author Ladislas DELLINGER & Alfred PICHARD
  */
 public class InputArc implements IArc {
 	

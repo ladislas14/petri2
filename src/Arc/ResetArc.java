@@ -3,9 +3,8 @@ import Node.Place;
 
 /**
  * Reset arc class
- *
  * @version 1.0
- * @author Ladislas DELLINGER and Alfred PICHARD
+ * @author Ladislas DELLINGER & Alfred PICHARD
  */
 public class ResetArc extends InputArc {
 

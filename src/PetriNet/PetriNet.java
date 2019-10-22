@@ -9,20 +9,16 @@ import Arc.OutputArc;
 import Node.Transition;
 
 /**
- * Implementation of the PetriNet interface.
- *
- * @version 1.0
- * @author Ladislas DELLINGER and Alfred PICHARD
- *
+ * The type Petri net.
  */
 public class PetriNet implements IPetriNet{
 	
 	private List<Transition> transitions;
 
 	/**
-	 * Instantiates a new PetriNet.
+	 * Instantiates a new Petri net.
 	 *
-	 * @param transitions a list of transitions to initialize in the PetriNet.
+	 * @param transitions the transitions
 	 */
 	public PetriNet(List<Transition> transitions) {
 		this.transitions = transitions;
@@ -30,19 +26,11 @@ public class PetriNet implements IPetriNet{
 
 	/**
 	 * Instantiates a new Petri net.
-	 *
-	 * <p>
-	 *     Second constructor to create an empty PetriNet.
-	 * </p>
 	 */
 	public PetriNet() {
 		this(new ArrayList<Transition>());
 	}
 
-	/**
-	 * Fire a random transition if there is one enabled.
-	 *
-	 */
 	public void step() {
 		List<Transition> enabledTransitions=this.getEnabledTransitions();
 		if(enabledTransitions.size()>0) {
@@ -51,38 +39,16 @@ public class PetriNet implements IPetriNet{
 		}
 		
 	}
-
-	/**
-	 * Launch the emulation of the PetriNet.
-	 *
-	 * <p>
-	 *     Execute the {@code step()} method until there is no more enabled transitions available.
-	 * </p>
-	 */
+	
 	public void emulate() {
 		while(this.getEnabledTransitions().size()>0) {
 			this.step();
 		}
 	}
-
-	/**
-	 * Execute the {@code fire} method of the {@code Transition} class.
-	 *
-	 * <p>
-	 *     Can be considered as an alias of the {@code Transtion.fire()} method.
-	 * </p>
-	 *
-	 * @param transition the transition to fire
-	 */
 	public void fire(Transition transition) {
 		transition.fire();
 	}
 
-	/**
-	 * Gets enabled transitions.
-	 *
-	 * @return a list of the enabled transitions
-	 */
 	public List<Transition> getEnabledTransitions() {
 		List <Transition>enabledTransitions=new ArrayList<Transition>();
 		for(Transition transition:transitions) {
@@ -92,31 +58,19 @@ public class PetriNet implements IPetriNet{
 		}
 		return enabledTransitions;
 	}
-
-	/**
-	 * Gets the arcs of the PetriNet.
-	 *
-	 * @return a list of the arcs of the PetriNet
-	 */
+	
 	public List<IArc> getArcs(){
 		List<IArc> list=new ArrayList<IArc>();
-
-		// Get all the input arcs and output arcs and make a list with all the arc of the PetriNet
 		for(Transition transition:transitions) {
-			// Get the input arcs
 			for(InputArc inputArc:transition.getInputArcs()) {
 				for(IArc existingArc:list) {
-					// Verify that the arc is not already in the list. Just as a prevention.
 					if(existingArc!=inputArc) {
 						list.add(inputArc);
 					}
 				}
 			}
-
-			// Get the output arcs
 			for(OutputArc outputArc:transition.getOutputArcs()) {
 				for(IArc existingArc:list) {
-					// Verify that the arc is not already in the list. Just as a prevention.
 					if(existingArc!=outputArc) {
 						list.add(outputArc);
 					}
@@ -127,7 +81,7 @@ public class PetriNet implements IPetriNet{
 	}
 	
 	public String toString() {
-		String result="Transitions :\n";
+		String result="Liste des transitions:\n";
 		for(int i=0; i<transitions.size(); i++) {
 			result+="transition "+ i + "\n";
 			result+=transitions.get(i).toString()+"\n";

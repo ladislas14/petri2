@@ -1,9 +1,8 @@
 package Arc;
 /**
  * Interface IArc
- *
  * @version 1.0
- * @author Ladislas DELLINGER and Alfred PICHARD
+ * @author Ladislas DELLINGER & Alfred PICHARD
  */
 public interface IArc {
 	
