@@ -77,6 +77,6 @@ public class InputArc implements IArc {
 	 * toString function
 	 */
 	public String toString() {
-		return "Arc entrant. Poids: "+this.getWeight()+"; Place liée contient "+this.getPlace().getTokens()+" jeton(s)";
+		return "Input Arc. Weight : "+this.getWeight()+"; The corresponding Place owns "+this.getPlace().getTokens()+" Token(s)";
 	}
 }

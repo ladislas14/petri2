@@ -63,7 +63,7 @@ public class OutputArc implements IArc {
 	}
 	
 	public String toString() {
-		return "Arc sortant. Poids: "+this.getWeight()+"; Place liée contient "+this.getPlace().getTokens()+" jeton(s)";
+		return "Output Arc. Weight : "+this.getWeight()+"; The corresponding Place owns "+this.getPlace().getTokens()+" Token(s)";
 	}
 
 }

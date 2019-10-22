@@ -26,7 +26,7 @@ public class InhibitorArc extends InputArc {
 	}
 	
 	public String toString() {
-		return "Arc videur. Place liée contient "+this.getPlace().getTokens()+" jeton(s)";
+		return "Inhibitor Arc. The corresponding Place owns "+this.getPlace().getTokens()+" Token(s)";
 	}
 
 }

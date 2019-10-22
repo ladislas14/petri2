@@ -48,10 +48,10 @@ public class ResetArc extends InputArc {
 	}
 
 	/**
-	 *  the toString function.
+	 *  toString function.
 	 */
 	public String toString() {
-		return "Arc zéro. Place liée contient "+this.getPlace().getTokens()+" jeton(s)";
+		return "Reset Arc. The corresponding Place owns "+this.getPlace().getTokens()+" Token(s)";
 	}
 
 }
