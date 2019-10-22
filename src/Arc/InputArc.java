@@ -2,7 +2,9 @@ package Arc;
 import Node.Place;
 
 /**
- * The type Input arc.
+ *  Input arc class
+ * @version 1.0
+ * @author Ladislas DELLINGER & Alfred PICHARD
  */
 public class InputArc implements IArc {
 	
@@ -12,8 +14,8 @@ public class InputArc implements IArc {
     /**
      * Instantiates a new Input arc.
      *
-     * @param weight the weight
-     * @param place  the place
+     * @param weight as weight
+     * @param place  as place
      */
     public InputArc(int weight, Place place) {
 		this.weight = weight;
@@ -23,16 +25,16 @@ public class InputArc implements IArc {
     /**
      * Instantiates a new Input arc.
      *
-     * @param place the place
+     * @param place as place
      */
     public InputArc(Place place) {
 		this(1, place);
 	}
 
     /**
-     * Enabled boolean.
+     * Enabled as a boolean.
      *
-     * @return the boolean
+     * @return true if arc is enabled (ie: if there are enough token to fire)
      */
     public boolean enabled() {
 		if(this.getPlace().getTokens()>=this.getWeight()) {
@@ -42,10 +44,16 @@ public class InputArc implements IArc {
 		}
 	}
 
+	/**
+	 * In this case, remove the right number of tokens from the corresponding place.
+	 */
 	public void fire() {
 		this.getPlace().remove(this.getWeight());
 	}
 
+	/**
+	 * Getter and setter for weight
+	 */
 	public int getWeight() {
 		return weight;
 	}
@@ -55,23 +63,19 @@ public class InputArc implements IArc {
 	}
 
     /**
-     * Gets place.
-     *
-     * @return the place
+     * Getter and Setter for place
      */
     public Place getPlace() {
 		return place;
 	}
 
-    /**
-     * Sets place.
-     *
-     * @param place the place
-     */
     public void setPlace(Place place) {
 		this.place = place;
 	}
-	
+
+	/**
+	 * toString function
+	 */
 	public String toString() {
 		return "Arc entrant. Poids: "+this.getWeight()+"; Place liée contient "+this.getPlace().getTokens()+" jeton(s)";
 	}

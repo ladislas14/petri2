@@ -2,7 +2,9 @@ package Arc;
 import Node.Place;
 
 /**
- * The type Output arc.
+ *  Output arc class
+ * @version 1.0
+ * @author Ladislas DELLINGER & Alfred PICHARD
  */
 public class OutputArc implements IArc {
 	
@@ -13,8 +15,8 @@ public class OutputArc implements IArc {
 	/**
 	 * Instantiates a new Output arc.
 	 *
-	 * @param weight the weight
-	 * @param place  the place
+	 * @param weight as weight
+	 * @param place  as place
 	 */
 	public OutputArc(int weight, Place place) {
 		this.weight = weight;
@@ -24,17 +26,23 @@ public class OutputArc implements IArc {
 	/**
 	 * Instantiates a new Output arc.
 	 *
-	 * @param place the place
+	 * @param place as place
 	 */
 	public OutputArc(Place place) {
 		this(1,place);
 	}
 
+	/**
+	 * In this case, give the right number of tokens to the corresponding place.
+	 */
 	public void fire() {
 		this.getPlace().give(this.getWeight());
 
 	}
 
+	/**
+	 * Getter and setter for weight
+	 */
 	public void setWeight(int weight) {
 		this.weight = weight;
 	}
@@ -44,19 +52,12 @@ public class OutputArc implements IArc {
 	}
 
 	/**
-	 * Gets place.
-	 *
-	 * @return the place
+	 * Getter and setter for place
 	 */
 	public Place getPlace() {
 		return place;
 	}
 
-	/**
-	 * Sets place.
-	 *
-	 * @param place the place
-	 */
 	public void setPlace(Place place) {
 		this.place = place;
 	}

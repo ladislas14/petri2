@@ -2,14 +2,16 @@ package Arc;
 import Node.Place;
 
 /**
- * The type Inhibitor arc.
+ *  Inhibitor arc class
+ * @version 1.0
+ * @author Ladislas DELLINGER & Alfred PICHARD
  */
 public class InhibitorArc extends InputArc {
 
 	/**
 	 * Instantiates a new Inhibitor arc.
 	 *
-	 * @param place the place
+	 * @param place as Place
 	 */
 	public InhibitorArc(Place place) {
 		super(0,place);

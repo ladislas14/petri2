@@ -2,15 +2,17 @@ package Arc;
 import Node.Place;
 
 /**
- * The type Reset arc.
+ * Reset arc class
+ * @version 1.0
+ * @author Ladislas DELLINGER & Alfred PICHARD
  */
 public class ResetArc extends InputArc {
 
 	/**
 	 * Instantiates a new Reset arc.
 	 *
-	 * @param weight the weight
-	 * @param place  the place
+	 * @param weight as weight.
+	 * @param place  as place.
 	 */
 	public ResetArc(int weight, Place place) {
 		super(weight, place);
@@ -19,12 +21,17 @@ public class ResetArc extends InputArc {
 	/**
 	 * Instantiates a new Reset arc.
 	 *
-	 * @param place the place
+	 * @param place as place.
 	 */
 	public ResetArc(Place place) {
 		super(place);
 	}
 
+	/**
+	 * Enabled as a boolean.
+	 *
+	 * @return true if arc is enabled (ie: if there are enough token to fire).
+	 */
 	public boolean enabled() {
 		if(this.getPlace().getTokens()>0) {
 			return true;
@@ -33,10 +40,16 @@ public class ResetArc extends InputArc {
 		}
 	}
 
+	/**
+	 * In this case, remove all the tokens from the corresponding place.
+	 */
 	public void fire() {
 		this.getPlace().setTokens(0);
 	}
-	
+
+	/**
+	 *  the toString function.
+	 */
 	public String toString() {
 		return "Arc zéro. Place liée contient "+this.getPlace().getTokens()+" jeton(s)";
 	}
