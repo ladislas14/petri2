@@ -6,7 +6,7 @@ import Arc.InputArc;
 import Arc.OutputArc;
 
 /**
- * The type Transition.
+ * Implementation of the transitions of the PetriNet.
  */
 public class Transition {
 
@@ -26,6 +26,8 @@ public class Transition {
 
 	/**
 	 * Instantiates a new Transition.
+	 *
+	 * <p>Second constructor to instantiate an unlinked Transition.</p>
 	 */
 	public Transition() {
 		this(new ArrayList<InputArc>(), new ArrayList<OutputArc>());
@@ -84,6 +86,8 @@ public class Transition {
 
 	/**
 	 * Fire.
+	 *
+	 * Execute the {@code fire()} method for all input and output arcs of the transition.
 	 */
 	public void fire() {
 		for(InputArc arc:inputArcs) {
@@ -95,7 +99,7 @@ public class Transition {
 	}
 	
 	public String toString() {
-		String result="Transition. Arcs liés: \n";
+		String result="Transition. Output and Input arcs of the transition : \n";
 		for(OutputArc outputArc:this.getOutputArcs()) {
 			result+=outputArc.toString()+"\n";
 		}
