@@ -1,21 +1,40 @@
 package Arc;
 import Node.Place;
 
+/**
+ * The type Input arc.
+ */
 public class InputArc implements IArc {
 	
 	private int weight;
 	private Place place;
-	
-	public InputArc(int weight, Place place) {
+
+    /**
+     * Instantiates a new Input arc.
+     *
+     * @param weight the weight
+     * @param place  the place
+     */
+    public InputArc(int weight, Place place) {
 		this.weight = weight;
 		this.place = place;
 	}
-	
-	public InputArc(Place place) {
+
+    /**
+     * Instantiates a new Input arc.
+     *
+     * @param place the place
+     */
+    public InputArc(Place place) {
 		this(1, place);
 	}
 
-	public boolean enabled() {
+    /**
+     * Enabled boolean.
+     *
+     * @return the boolean
+     */
+    public boolean enabled() {
 		if(this.getPlace().getTokens()>=this.getWeight()) {
 			return true;
 		}else {
@@ -35,11 +54,21 @@ public class InputArc implements IArc {
 		this.weight = weight;
 	}
 
-	public Place getPlace() {
+    /**
+     * Gets place.
+     *
+     * @return the place
+     */
+    public Place getPlace() {
 		return place;
 	}
 
-	public void setPlace(Place place) {
+    /**
+     * Sets place.
+     *
+     * @param place the place
+     */
+    public void setPlace(Place place) {
 		this.place = place;
 	}
 	

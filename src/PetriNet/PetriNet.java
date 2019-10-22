@@ -8,14 +8,25 @@ import Arc.InputArc;
 import Arc.OutputArc;
 import Node.Transition;
 
+/**
+ * The type Petri net.
+ */
 public class PetriNet implements IPetriNet{
 	
 	private List<Transition> transitions;
 
+	/**
+	 * Instantiates a new Petri net.
+	 *
+	 * @param transitions the transitions
+	 */
 	public PetriNet(List<Transition> transitions) {
 		this.transitions = transitions;
 	}
 
+	/**
+	 * Instantiates a new Petri net.
+	 */
 	public PetriNet() {
 		this(new ArrayList<Transition>());
 	}
