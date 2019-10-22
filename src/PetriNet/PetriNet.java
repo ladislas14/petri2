@@ -72,7 +72,7 @@ public class PetriNet implements IPetriNet{
 	 *     Can be considered as an alias of the {@code Transtion.fire()} method.
 	 * </p>
 	 *
-	 * @param transition the transition to fire
+	 * @param transition the Transition to fire
 	 */
 	public void fire(Transition transition) {
 		transition.fire();
